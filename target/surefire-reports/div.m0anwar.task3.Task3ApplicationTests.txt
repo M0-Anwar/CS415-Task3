@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: div.m0anwar.task3.Task3ApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.459 s -- in div.m0anwar.task3.Task3ApplicationTests
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.285 s <<< FAILURE! -- in div.m0anwar.task3.Task3ApplicationTests
+div.m0anwar.task3.Task3ApplicationTests.testFindAll -- Time elapsed: 0.040 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <[div.m0anwar.task3.entity.Employee@67f116b1, div.m0anwar.task3.entity.Employee@fcd5cd52, div.m0anwar.task3.entity.Employee@91ba83f3]> but was: <[div.m0anwar.task3.entity.Employee@67f116b1, div.m0anwar.task3.entity.Employee@fcd5cd52, div.m0anwar.task3.entity.Employee@91ba83f3, div.m0anwar.task3.entity.Employee@269f3a94]>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at div.m0anwar.task3.Task3ApplicationTests.testFindAll(Task3ApplicationTests.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
