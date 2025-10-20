@@ -69,9 +69,9 @@ class Task3ApplicationTests {
 	public void testAddEmployee() {
 		Employee employee5 = new Employee(5, "Employee5", "Employee5@gmail.com");
 
-		boolean result = employeeRestController.addEmployee(employee5);
+		boolean resultt = employeeRestController.addEmployee(employee5);
 
-		assertTrue(result);
+		assertTrue(resultt);
 	}
 
 	@Test
