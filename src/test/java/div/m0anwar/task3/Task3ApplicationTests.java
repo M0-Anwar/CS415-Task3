@@ -38,7 +38,8 @@ class Task3ApplicationTests {
 
 		if (allEmployees == null) {
 		}
-		allEmployees = new ArrayList<>(Arrays.asList(employee1, employee2, employee3, employee4));
+		// allEmployees = new ArrayList<>(Arrays.asList(employee1, employee2, employee3, employee4));
+		allEmployees = new ArrayList<>(Arrays.asList(employee1, employee2, employee3)); // ! used to brock the tests
 
 		employeeRestController = new EmployeeRestController();
 	}
@@ -69,9 +70,9 @@ class Task3ApplicationTests {
 	public void testAddEmployee() {
 		Employee employee5 = new Employee(5, "Employee5", "Employee5@gmail.com");
 
-		boolean resultt = employeeRestController.addEmployee(employee5);
+		boolean result = employeeRestController.addEmployee(employee5);
 
-		assertTrue(resultt);
+		assertTrue(result);
 	}
 
 	@Test
